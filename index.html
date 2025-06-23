@@ -1,77 +1,79 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Just How We Roll</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
-</head>
-<body>
-    <section id="app">
-        <section id="d6" class="roll-section single-die">
-            <section id="d6-button">
-                <h3>Click The Die To Roll</h3>
-                <img class="d6 roll" id="d6-roll">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Just How We Roll</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    </head>
+    <body>
+        <section id="app">
+            <section id="d6" class="roll-section single-die">
+                <section id="d6-button">
+                    <h3>Click The Die To Roll</h3>
+                    <img class="d6 roll" id="d6-roll" src="images/start/d6.png" />
+                </section>
+                <section id="d6-averages">
+                    <h3>Mean</h3>
+                    <h3 id="d6-rolls-mean"></h3>
+                    <h3>Median</h3>
+                    <h3 id="d6-rolls-median"></h3>
+                    <h3>Mode</h3>
+                    <h3 id="d6-rolls-mode"></h3>
+                </section>
             </section>
-            <section id="d6-averages">
-                <h3>Mean</h3>
-                <h3 id="d6-rolls-mean"></h3>
-                <h3>Median</h3>
-                <h3 id="d6-rolls-median"></h3>
-                <h3>Mode</h3>
-                <h3 id="d6-rolls-mode"></h3>
+            <section id="double-d6" class="roll-section">
+                <section id="double-d6-buttons">
+                    <header>
+                        <h3>Click The Dice To Roll</h3>
+                    </header>
+                    <div id="wtf">   
+                        <img class="double d6 roll" id="double-d6-roll-1" src="images/start/d6.png"/>
+                        <img class="double d6 roll" id="double-d6-roll-2" src="images/start/d6.png"/>
+                    </div>                     
+                    </main>
+                </section>
+                <section id="double-d6-averages">
+                    <h3>Mean</h3>
+                    <h3 id="double-d6-rolls-mean"></h3>
+                    <h3>Median</h3>
+                    <h3 id="double-d6-rolls-median"></h3>
+                    <h3>Mode</h3>
+                    <h3 id="double-d6-rolls-mode"></h3>
+                </section>
             </section>
+            <section id="d12" class="roll-section single-die">
+                <section id="d12-button">
+                    <h3>Click The Die To Roll</h3>
+                    <img class="roll" src="images/start/d12.jpeg" id="d12-roll" />
+                </section>
+                <section id="d12-averages">
+                    <h3>Mean</h3>
+                    <h3 id="d12-rolls-mean"></h3>
+                    <h3>Median</h3>
+                    <h3 id="d12-rolls-median"></h3>
+                    <h3>Mode</h3>
+                    <h3 id="d12-rolls-mode"></h3>
+                </section>
+            </section>
+            <section id="d20" class="roll-section single-die">
+                <section id="d20-button">
+                    <h3>Click The Die To Roll</h3>
+                    <img class="roll" src="images/start/d20.jpg" id="d20-roll" />
+                </section>
+                <section id="d20-averages">
+                    <h3>Mean</h3>
+                    <h3 id="d20-rolls-mean"></h3>
+                    <h3>Median</h3>
+                    <h3 id="d20-rolls-median"></h3>
+                    <h3>Mode</h3>
+                    <h3 id="d20-rolls-mode"></h3>
+                </section>
+            </section>
+            <button id="reset-button">Reset All Rolls</button>
         </section>
-        <section id="double-d6" class="roll-section">
-            <section id="double-d6-buttons">
-                <header>
-                    <h3>Click The Dice To Roll</h3>
-                </header>
-                <main>
-                    <img class="double d6 roll" id="double-d6-roll-1">
-                    <img class="double d6 roll" id="double-d6-roll-2">
-                </main>
-            </section>
-            <section id="double-d6-averages">
-                <h3>Mean</h3>
-                <h3 id="double-d6-rolls-mean"></h3>
-                <h3>Median</h3>
-                <h3 id="double-d6-rolls-median"></h3>
-                <h3>Mode</h3>
-                <h3 id="double-d6-rolls-mode"></h3>
-            </section>
-        </section>
-        <section id="d12" class="roll-section single-die">
-            <section id="d12-button">
-                <h3>Click The Die To Roll</h3>
-                <img class="roll" src="" id="d12-roll">
-            </section>
-            <section id="d12-averages">
-                <h3>Mean</h3>
-                <h3 id="d12-rolls-mean"></h3>
-                <h3>Median</h3>
-                <h3 id="d12-rolls-median"></h3>
-                <h3>Mode</h3>
-                <h3 id="d12-rolls-mode"></h3>
-            </section>
-        </section>
-        <section id="d20" class="roll-section single-die">
-            <section id="d20-button">
-                <h3>Click The Die To Roll</h3>
-                <img class="roll" src="" id="d20-roll">
-            </section>
-            <section id="d20-averages">
-                <h3>Mean</h3>
-                <h3 id="d20-rolls-mean"></h3>
-                <h3>Median</h3>
-                <h3 id="d20-rolls-median"></h3>
-                <h3>Mode</h3>
-                <h3 id="d20-rolls-mode"></h3>
-            </section>
-        </section>
-        <button id="reset-button">Reset All Rolls</button>
-    </section>
-    <script src="main.js"></script>
-</body>
+        <script src="main.js"></script>
+        
+    </body>
 </html>
