@@ -3,7 +3,7 @@ const doubleSixes = document.querySelectorAll("#wtf img");
 const twelves = document.querySelector("#d12-roll");
 const twenties = document.querySelector("#d20-roll");
 const resetButton = document.querySelector("#reset-button");
-
+//test with mo
 /********************
  * HELPER FUNCTIONS *
  ********************/
